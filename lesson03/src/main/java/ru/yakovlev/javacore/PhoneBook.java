@@ -19,7 +19,6 @@ public class PhoneBook {
     static HashMap<String, String> hs = new HashMap<String, String>();
 
     public static void main(String[] args) {
-        String name = "Волненко";
         add("Яковлев","+79220000000");
         add("Волненко","+79220000001");
         add("Гончаров","+79220000002");
@@ -30,6 +29,7 @@ public class PhoneBook {
         add("Чичук","+79220000007");
         add("Сыскаев","+79220000008");
         add("Телегин","+79220000009");
+        final String name = "Волненко";
         System.out.println(get(name));
     }
 
@@ -42,7 +42,7 @@ public class PhoneBook {
         Set<Map.Entry<String, String>> set = hs.entrySet();
         for(Map.Entry<String, String> o : set) {
             if (o.getValue()==name) {
-            res.add("Имя: "+o.getValue()+" Тел.: "+o.getKey());
+                res.add("Имя: "+o.getValue()+" Тел.: "+o.getKey());
             }
         }
         return res;
