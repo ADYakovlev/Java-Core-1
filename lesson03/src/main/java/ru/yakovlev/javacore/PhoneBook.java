@@ -37,9 +37,9 @@ public class PhoneBook {
         hs.put(number,name);
     }
 
-    public static ArrayList<String> get(String name){
-        ArrayList<String> res = new ArrayList<String>();
-        Set<Map.Entry<String, String>> set = hs.entrySet();
+    public static List<String> get(String name){
+        final List<String> res = new ArrayList<String>();
+        final Set<Map.Entry<String, String>> set = hs.entrySet();
         for(Map.Entry<String, String> o : set) {
             if (o.getValue()==name) {
                 res.add("Имя: "+o.getValue()+" Тел.: "+o.getKey());
