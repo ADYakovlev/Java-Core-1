@@ -20,7 +20,6 @@ public class myWindow extends JFrame {
         setLayout(new BorderLayout());
         JButton send = new JButton("Send");
         send.setBorderPainted(false);
-        send.setPreferredSize(new Dimension(100,30));
         final JTextField textField = new JTextField();
         final JTextArea textArea = new JTextArea();
         textArea.setEditable(false);
