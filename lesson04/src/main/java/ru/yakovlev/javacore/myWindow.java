@@ -18,7 +18,7 @@ public class myWindow extends JFrame {
         setBounds(x, y, w, h);
         setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
         setLayout(new BorderLayout());
-        JButton send = new JButton("Send");
+        JButton send = new JButton("send");
         send.setBorderPainted(false);
         final JTextField textField = new JTextField();
         final JTextArea textArea = new JTextArea();

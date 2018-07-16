@@ -12,7 +12,7 @@ public class App {
 
 
     public static void main( String[] args ) {
-    myWindow dialog = new myWindow(600,600,300,300, "Dialog",false);
+    myWindow dialog = new myWindow(600,500,300,300, "Dialog",false);
     dialog.setVisible(true);
     }
 }
