@@ -7,7 +7,7 @@ import java.net.Socket;
 import java.util.Scanner;
 
 /**
- * Hello world!
+ * @author Yakovlev Alexandr
  */
 public class Server {
     public static void main(String[] args) {
@@ -38,10 +38,6 @@ public class Server {
                 String msg = sc.nextLine();
                 if (msg.equals("/end")) break;
                 System.out.println("\nClient: " + msg);
-//                pw.println("эхо "+msg);
-//                pw.flush();
-//                writer = new BufferedWriter(new OutputStreamWriter(socket.getOutputStream()));
-//                writer.write()"asdasd"
 
             }
         } catch (IOException e) {
@@ -53,6 +49,5 @@ public class Server {
                 e.printStackTrace();
             }
         }
-        туц
     }
 }
