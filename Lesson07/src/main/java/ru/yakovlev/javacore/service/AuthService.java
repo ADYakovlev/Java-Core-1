@@ -1,4 +1,8 @@
-package ru.volnenko.javacore.lesson7.server.service;
+package ru.yakovlev.javacore.service;
+
+/*
+ *@author Yakovlev Alexandr
+ */
 
 public interface AuthService {
 
@@ -9,3 +13,4 @@ public interface AuthService {
     void stop();
 
 }
+

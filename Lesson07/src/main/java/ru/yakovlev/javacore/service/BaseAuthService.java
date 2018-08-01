@@ -1,45 +1,51 @@
-package ru.volnenko.javacore.lesson7.server.service;
+package ru.yakovlev.javacore.service;
 
 import java.util.ArrayList;
 import java.util.List;
 
+/*
+ *@author Yakovlev Alexandr
+ */
+
 public class BaseAuthService implements AuthService {
 
-    private class Entry {
+    private class Entery {
         private String login;
         private String pass;
         private String nick;
 
-        public Entry(String login, String pass, String nick) {
+        public Entery(String login, String pass, String nick) {
             this.login = login;
             this.pass = pass;
             this.nick = nick;
         }
     }
 
-    private List<Entry> entries;
+    private List<Entery> enteries;
 
     @Override
     public void start() {
-    }
 
-    @Override
-    public void stop() {
-    }
-
-    public BaseAuthService() {
-        entries = new ArrayList<>();
-        entries.add(new Entry("login1", "pass1", "nick1"));
-        entries.add(new Entry("login2", "pass2", "nick2"));
-        entries.add(new Entry("login3", "pass3", "nick3"));
     }
 
     @Override
     public String getNickByLoginPass(String login, String pass) {
-        for (Entry o : entries) {
+        for (Entery o : enteries) {
             if (o.login.equals(login) && o.pass.equals(pass)) return o.nick;
         }
         return null;
     }
 
+    @Override
+    public void stop() {
+
+    }
+
+    public BaseAuthService() {
+        enteries = new ArrayList<>();
+        enteries.add(new Entery("login1", "pass1", "nick1"));
+        enteries.add(new Entery("login2", "pass2", "nick2"));
+        enteries.add(new Entery("login3", "pass3", "nick3"));
+
+    }
 }
