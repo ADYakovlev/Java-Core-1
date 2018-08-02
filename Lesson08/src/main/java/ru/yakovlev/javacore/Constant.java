@@ -7,6 +7,7 @@ package ru.yakovlev.javacore;
 public final class Constant {
     public static final String SERVER_ADDRES = "localhost";
     public static final Integer SERVER_PORT = 8190;
+    public static final Integer SERVER_CONNECTION_RESTRICTION = 100;
     public static final Integer PADDING_X = 400;
     public static final Integer PADDING_Y = 400;
     public static final Integer WIDTH_WINDOW = 300;

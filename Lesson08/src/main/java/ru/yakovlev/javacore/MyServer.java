@@ -25,7 +25,7 @@ public class MyServer {
 
     public MyServer() {
         try {
-            server = new ServerSocket(Constant.SERVER_PORT);
+            server = new ServerSocket(Constant.SERVER_PORT, Constant.SERVER_CONNECTION_RESTRICTION);
             Socket socket = null;
             authService = new BaseAuthService();
             authService.start();
