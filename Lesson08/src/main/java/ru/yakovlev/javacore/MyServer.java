@@ -33,6 +33,7 @@ public class MyServer {
             while (true) {
                 System.out.println("Сервер ожидает подключения...");
                 socket = server.accept();
+                socket.setSoTimeout(12000);
                 System.out.println("Клиент подключился");
                 new ClientHandler(this, socket);
             }

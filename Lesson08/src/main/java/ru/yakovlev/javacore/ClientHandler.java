@@ -23,6 +23,10 @@ public class ClientHandler {
         return name;
     }
 
+    public void setSocket(){
+
+    }
+
     public ClientHandler(MyServer myServer, Socket socket) {
         try {
             this.myServer = myServer;
@@ -30,12 +34,7 @@ public class ClientHandler {
             this.in = new DataInputStream(socket.getInputStream());
             this.out = new DataOutputStream(socket.getOutputStream());
             this.name = "";
-            new Thread(() -> {
-                CheckAutharisationTimer(socket);
-            }).start();
-            new Thread(() -> {
-                autharization();
-            }).start();
+            new Thread(() -> {autharization();}).start();
         } catch (IOException e) {
             throw new RuntimeException("Проблемы при созданиии обработчика клиента");
         }
