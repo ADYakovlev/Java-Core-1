@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane fx:controller="ru.yakovlev.javacore.Controller" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <TextArea fx:id="textArea" layoutX="204.0" prefHeight="363.0" prefWidth="375.0" AnchorPane.bottomAnchor="32.0" AnchorPane.leftAnchor="202.0" AnchorPane.rightAnchor="1.0" AnchorPane.topAnchor="32.0" />
+      <ListView fx:id="list" onEditStart="#onList" prefWidth="200.0" AnchorPane.bottomAnchor="1.0" AnchorPane.leftAnchor="1.0" AnchorPane.topAnchor="32.0" />
+      <TextField fx:id="msg" layoutX="204.0" layoutY="374.0" onAction="#onMsg" prefHeight="30.0" AnchorPane.bottomAnchor="1.0" AnchorPane.leftAnchor="202.0" AnchorPane.rightAnchor="50.0" />
+      <Button fx:id="send" layoutX="548.0" layoutY="374.0" mnemonicParsing="false" onAction="#onSend" prefHeight="30.0" prefWidth="48.0" text="send" AnchorPane.bottomAnchor="1.0" AnchorPane.rightAnchor="1.0" />
+      <Label fx:id="nick" layoutX="211.0" layoutY="6.0" prefHeight="30.0" text="Alexandr Yakovlev" AnchorPane.leftAnchor="202.0" AnchorPane.topAnchor="1.0">
+         <padding>
+            <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+         </padding>
+      </Label>
+      <Button fx:id="authExit" layoutX="558.0" layoutY="9.0" mnemonicParsing="false" onAction="#onAuthExit" prefHeight="30.0" prefWidth="48.0" text="exit" AnchorPane.rightAnchor="1.0" AnchorPane.topAnchor="1.0" />
+      <TextField fx:id="search" layoutX="14.0" layoutY="4.0" onAction="#onSearch" prefHeight="30.0" prefWidth="200.0" AnchorPane.leftAnchor="1.0" AnchorPane.topAnchor="1.0" />
+   </children>
+</AnchorPane>

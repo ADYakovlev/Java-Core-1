@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<TabPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="154.0" prefWidth="409.0" tabClosingPolicy="UNAVAILABLE" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8">
+  <tabs>
+    <Tab fx:id="signInTab" text="Sign in">
+      <content>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="122.0" prefWidth="396.0">
+               <children>
+                  <Button fx:id="signInBtn" layoutX="229.0" layoutY="76.0" mnemonicParsing="false" onAction="#onSignInBtn" prefHeight="25.0" prefWidth="58.0" text="Sign in" AnchorPane.rightAnchor="1.0" AnchorPane.topAnchor="53.0" />
+                  <TextField fx:id="signInNum" layoutX="14.0" layoutY="14.0" prefHeight="25.0" promptText="Number" AnchorPane.leftAnchor="1.0" AnchorPane.rightAnchor="59.0" AnchorPane.topAnchor="1.0" />
+                  <TextField fx:id="signInPass" layoutX="14.0" layoutY="48.0" prefHeight="25.0" prefWidth="214.0" promptText="Password" AnchorPane.leftAnchor="1.0" AnchorPane.rightAnchor="59.0" AnchorPane.topAnchor="27.0" />
+                  <Label fx:id="SignCopy" layoutX="152.0" layoutY="292.0" text="© Yakovlev Alexandr" AnchorPane.bottomAnchor="1.0" />
+               </children></AnchorPane>
+      </content>
+    </Tab>
+    <Tab fx:id="signUpTab" text="Sign up">
+      <content>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="204.0" prefWidth="346.0">
+               <children>
+                  <TextField fx:id="signUpNum" layoutX="14.0" layoutY="14.0" prefHeight="25.0" promptText="Number" AnchorPane.leftAnchor="1.0" AnchorPane.rightAnchor="59.0" AnchorPane.topAnchor="1.0" />
+                  <TextField fx:id="signUpNam" layoutX="14.0" layoutY="46.0" prefHeight="25.0" promptText="Name" AnchorPane.leftAnchor="1.0" AnchorPane.rightAnchor="59.0" AnchorPane.topAnchor="27.0" />
+                  <TextField fx:id="signUpPass" layoutX="14.0" layoutY="76.0" prefHeight="25.0" promptText="Password" AnchorPane.leftAnchor="1.0" AnchorPane.rightAnchor="59.0" AnchorPane.topAnchor="53.0" />
+                  <Button fx:id="signUpBtn" layoutX="169.0" layoutY="76.0" maxWidth="58.0" mnemonicParsing="false" onAction="#onSignUpBtn" prefHeight="25.0" text="Sign up" AnchorPane.rightAnchor="1.0" AnchorPane.topAnchor="53.0" />
+                  <Label fx:id="signUpCopy" layoutX="152.0" layoutY="292.0" text="© Yakovlev Alexandr" AnchorPane.bottomAnchor="1.0" />
+               </children></AnchorPane>
+      </content>
+    </Tab>
+  </tabs>
+</TabPane>
